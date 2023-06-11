@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Inserindo video</title>
+</head>
+<body>
+    <h1>inserindo videos hospedados localmente</h1>
+    <p>Este vídeo esté hospedado no meu próprio servidor</p> 
+    <video src="video/meu video.mp4" width="500" autoplay controls></video>  
+    <p>Só que para abrir de certo no navegador do usuário é melhor colocar vários formatos</p>
+    <video width="500" controls poster="gato-800.jpg">
+        <source src="video/meu video.mp4" type="video/mp4">
+        <source src="video/meu video.mp4" type="video/webm">
+        <source src="video/meu video.mp4" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com o vídeo</p>
+    </video> 
+    <p>O poster é para inserir a imagem que vai ficar antes de reproduzir o vídeo</p>
+    <h1>Inserindo vídeos externos</h1>
+    <p>Vai no vídeo do youtube, vai em incorporar e copiar o código que ele já vai dar pronto</p>
+    <p>Caso você não queira que seu video esteja público, talvez seja um curso pago privado, carregue seus videos no vimeo</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/diOqn5Mp0QA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

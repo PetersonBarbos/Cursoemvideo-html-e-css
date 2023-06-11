@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        a::before{
+            content: '->';
+        }
+        a::after{
+            content: '<-';
+        }
+        .especial::before{
+            content: '!!!!';
+        }
+        .especial::after{
+            content: '!!!!';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank">Link do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" target="_blank">link do md2css</a></li>
+        <li><a href="https://www.google.com.br/" target="_blank" class="especial">link google</a></li>
+        <li><a href="linkedin.com" target="_blank" class="especial">linkedin</a></li>
+        <p>Text decoration é o sublinhado, se colocar textdecoration: none, vai tirar o sublinhado</p>
+        <p>Aprendemos mais 2 pseudoclassee: visited e active, que mudam o estado das partes quando são visitadas se link e quando estão sendo seguradas no mouse (ativas) </p>
+        <p>pseudoelementos são usados em pseudoclasse? o simbolo para pseudoclasse é : e para pseudoelementos é ::</p>
+        <P>Tem como usar pseudoelementos para classes também, mas vai sobrepor outro conteúdo de pseudoclasse se estiver definido para o mesmo item</P>
+    </ul>
+    <h2>Aprendidos</h2>
+    
+    <ul>
+            <li># = id</li>
+            <li>. = class</li>
+            <li>: = pseudoclass</li>
+            <li>:: = pseudoelemento</li>
+            <li>> = children</li>
+        </ul>
+
+</body>
+</html>

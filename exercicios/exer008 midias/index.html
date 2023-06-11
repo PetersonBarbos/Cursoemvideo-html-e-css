@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente mude o tamanho da tela</p>
+    <p>A tag picture permite que você crie vários sources para definir qual imagem vai aparecer</p>
+    <p>Dentro do source media type, se o tamanho for no maximo 1000 eu vou carregar a m, se for maior que 1000 ele vai carregar a g de baixo, ele vai começar com min-width aí vc muda para max, e digita o caminho da imagem em srcset, e no type coloca o tipo da imagem, no caso png sempre coloca os sources acima da imagem maior</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/img_p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="Imagens/img_m.png" type="image/png">
+        <img src="Imagens/img_g.png" alt="img flexível">
+    </picture>
+    <h1>Reproduzindo aúdio</h1>
+    <audio preload ="metadata" autoplay controls>
+        <source src = "audios/Lotus Pond - Aakash Gandhi.mp3" type = "audio/mpag">
+        <source src = "audios/Lotus Pond - Aakash Gandhi.ogg" type = "audio/ogg">
+        <source src = "audios/Lotus Pond - Aakash Gandhi.wav" type = "audio/wav">
+        <p>Infelizmente não deu, <a href="audios/Lotus Pond - Aakash Gandhi.mp3">clique aqui para baixar o arquivo mp3</a></p>
+    </audio>
+    <p>Ele primeiro vai tentar carregar o primeiro arquivo no primeiro formato no caso o mp3, se não conseguir ele vai indo para o de baixo se não conseguir nenhum ele vai exibir a mensagem</p>
+    <p>Na tag audio, dentro do preload se colocar auto, o site vai esperar carregar tudo pra tocar, se colocar metadata ele vai carregar as informações necessárias e quando o usuário colocar para tocar que vai carregar o aúdio, se colocar none o site não vai carregar nada, o loop é para ele ficar tocando toda vez que acabar</p>
+</body>
+</html>

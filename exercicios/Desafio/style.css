@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+header{
+    background-image: linear-gradient(to bottom, rgb(89, 177, 89), rgb(31, 184, 31), green);
+    height: 150px;
+    padding: 0;
+    border: 0;
+    margin: -21px -14px -20px -11px;
+    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.411)
+}
+
+.tituloeparag{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    margin: 50px 5px 5px 5px;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    margin: 10px 5px 5px 5px;
+}
+
+nav > a:hover{
+    color: blue;
+
+    text-decoration-line: underline;
+}
+
+main{
+    background-color: white;
+    margin: 20px auto;
+    width: 1000px;
+    padding: 2px 10px;
+    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.411)
+
+}
+body{
+    background-color: rgb(132, 245, 132);
+    text-align: justify;
+}
+h2{
+    background-image: linear-gradient(to right, rgb(180, 236, 180), rgb(216, 250, 216), rgb(232, 250, 232));
+}
+footer{
+    background-color: white;
+    width: 1000px;
+    margin: -20px auto;
+    padding: 2px 10px;
+    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.411)
+}
+
+#dofoot{
+    background-color: rgb(212, 255, 212);
+    padding: 0px 2px 2px 2px;
+    text-align: justify;
+    border-radius: 2%;
+}
+h3{
+    background-color: rgb(30, 150, 30);
+    color: white;
+    width: 1000px;
+    margin: 0 0 0 -2px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+    padding: 5px 0 0 0;
+}

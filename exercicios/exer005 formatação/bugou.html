@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>principais formatações</title>
+    <style>
+        mark {background-color: brown;}
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2><mark>Negrito/Destaque</mark></h2>
+<p>Nesta frase temos <b>um termo em negrito</b> usando a tag b (sem semântica).</p>
+<p>Nesta frase temos <strong>um termo em destaque</strong> usando a tag strong.</p>
+<h2><mark>itálico/ênfase</mark></h2>
+<p>Nesta frase temos <i>um termo em itálico</i> usando a tag i (sem semântica).</p>
+<p>Nesta frase temos <em>um termo em ênfase</em> usando a tag em (com semântica).</p>
+<h2><mark style = "background-color: blue">Texto marcado</mark></h2>
+<p>Podemos criar também um <mark>texto marcado</mark> usando a tag mark</p>
+<p>Posso alterar a cor da marcação usando <mark style = "background-color:rgb(81, 255, 0)">css na tag para o mark específico</mark> ou <mark>no cabeçalho para todo documento</mark></p>
+<h2><mark>Texto grande e texto pequeno</mark></h2>
+<p>Estamos criando um <big>texto grande (obsoleto)</big> e um <small>texto pequeno nesse parágrafo</small></p>
+<h2><mark>Texto deletado</mark></h2>
+<p>Podemos marcar um <del>texto excluído</del> para indicar que ele pode ser lido mas não considerado</p>
+<h2><mark>Texto inserido</mark></h2>
+<p>Podemos marcar um <ins>texto inserido</ins> para indicar que ele foi adcionado depois</p>
+<p><u>podemos fazer também com o u de sublinhado</u>, mas pode ficar obsoleto em breve</p>
+<h2><mark>Texto sobrescrito</mark></h2>
+<p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+<h2><mark>Texto subescrito</mark></h2>
+<p>para inserir coisas do tipo H<sub>2</sub>O</p>
+<h2><mark>Código fonte / pré-formatação</mark></h2>
+<p>Para colocar fontes de código e separar dos demais textos usa-se a tag code e para deixar na formatação digitada usa-se a tag pre</p>
+<pre>
+    <code>
+        num = int(imput('Digite um número'))
+        if num % 2 == 0:
+            print (f' o número {num} é par)
+        else
+            print (f' o número {num} é impar)
+        print ('Fim do programa')
+    </code>
+</pre>
+<h2><mark>Citações</mark></h2>
+<p>Para citações simples usa-se a tag q de quote ou quotacion, para citações mais elaboradas usa-se a blockquote podendo referenciar site com cite="..." no cite não vai aparecer nada na página é só um mecanismo para o google quando alguém pesquisar, que vai dar preferência ao seu site</p>
+<p>Como já dizia sun tzu: <q>Ema Ema Ema cada um com seus problemas</q></p>
+<p>Segundo SunTzu no seu livro a arte da guerra:
+    <blockquote cite = "https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-8-aula-4-citacoes-e-codigos/">
+        Ema ema ema cada um com seus problemas e o mundo gira e o guerreiro se vira
+    </blockquote>
+</p>
+<h2><mark>Abreviações</mark></h2>
+<p>Usa-se a tag abbr para quando o usuário passar o mouse por cima aparecer o significado da abreviação</p>
+<p>Estou aprendendo <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+</body>
+</html>
