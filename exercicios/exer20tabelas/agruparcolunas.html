@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de colunas</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .amarelo{
+            background-color: yellow;
+        }
+        .vermelho{
+            background-color: red;
+        }
+        .container{
+            overflow: auto;
+        }
+        tr:nth-child(odd){
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <caption>Cadastro</caption>
+            <colgroup>
+                <col class="amarelo">
+                <col class="vermelho" span="2">
+                <col class="amarelo">
+            </colgroup>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Cláudia</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Marcelo</td>
+                <td>M</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>M</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>M</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Mário</td>
+                <td>M</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Peterson</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Programador</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
