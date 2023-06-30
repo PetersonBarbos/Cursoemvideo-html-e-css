@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="imasc" checked value="m"><label for="imasc">Masculino</label>
+                <input type="radio" name="sexo" id="ifem" value="f"><label for="ifem">Feminino</label>
+                <!--Para marcar ou um ou outro tem que ter o mesmo name-->
+            </p>
+        </fieldset>
+        <fieldset>
+           <legend>Esportes</legend>
+                <p>
+                    <input type="checkbox" name="basquete" id="ibas"><label for="ibas">Basquete</label> <br>
+                    <input type="checkbox" name="futebol" id="ifut" checked><label for="ifut">Futebol</label> <br>
+                    <input type="checkbox" name="handbol" id="ihand"><label for="ihand">Handbol</label> <br>
+                    <input type="checkbox" name="natação" id="inat"><label for="inat">Natação</label> <br>
+                </p>
+        </fieldset>
+        <!--Para já carregar a página com o checkbox ou radio marcado como aparece no "quero receber anuncios no meu email deste site" usa-se o checked-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
