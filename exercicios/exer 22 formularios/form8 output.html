@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="in1">N1</label>
+            <input type="number" name="N1" id="in1" min="0" max="100" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <!--quando eu entrar com o número isoma vai somar-->
+        </p>
+        <p>
+            <label for="in2">N2</label>
+            <input type="number" name="N2" id="in2" min="0" max="100" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma</label>
+            <output name="Soma" id="isoma">0</output>
+        </p>
+        <p>
+            <label for="inum">Escolha</label>
+            <input type="range" name="num" id="inum" min="1" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">5</output>
+        </p>
+        <p>
+            <label for="iano">Em que ano você nasce?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" oninput="calcIdade()">
+
+        </p>
+        <p>
+            <label for="iidade">Sua idade é:</label>
+            <output id="iidade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <!--quando clicar em enviar não vai enviar a soma, pois o output é para calcular e mostrar na tela e não calcular e enviar-->
+        </p>
+    </form>
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
