@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        /*Cofigurações gerais*/
+        @media all {
+            /*pode ser com ou sem o @midia all*/
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        html, body{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /*Pra as configurações daqui funcionar, nos outros css tem que tá como background image, coloquei só como background url e não funcionou as duas últimas*/
+        }
+        h1{
+            color: white;
+            padding: 10px;
+        }
+    }
+        /*Cofigurações retrato*/
+        @media screen and (orientation: portrait){
+        body{
+            background-image: url(../Imagens/cev-portrait.jpg);
+            background-position: center bottom;
+        }
+    }
+        /*Cofigurações paisagem*/
+        @media screen and (orientation: landscape) {
+        body{
+            background-image: url(../Imagens/cev-landscape.jpg);
+            background-position: left bottom;
+        }
+        }
+        /*da mesma forma posso copiar isso aqui e jogar pra um css só*/
+    </style>
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+</body>
+</html>
