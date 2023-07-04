@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/*typical breakpoints
+    pquenas telas: até 600px
+    celular: de 600px até 768
+    tablet: 768 até 992
+    desktop: 992 até 1200
+    grandes telas: acima de 1200px
+
+atual
+Common screen sizes
+    Mobile: 360 x 640
+    Mobile: 375 x 667
+    Mobile: 360 x 720
+    iPhone X: 375 x 812
+    Pixel 2: 411 x 731
+    Tablet: 768 x 1024
+    Laptop: 1366 x 768
+    High-res laptop or desktop: 1920 x 1080
+*/
+
+@media print {
+    /*impressão*/
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    /*como já fiz o mobile first, não precisa formatar ele novamente então começo por tablet*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #phone{display: none;}
+    #tablet{display: block;}
+    #impressora{display: none;}
+    #computador{display: none;}
+    #tv{display: none;}
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    /*desktop*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #impressora{display: none;}
+    #computador{display: block;}
+    #tv{display: none;}
+}
+@media screen and (min-width: 1200px){
+    /*telas grandes*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 700px;
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #impressora{display: none;}
+    #computador{display: none;}
+    #tv{display: block;}
+}
